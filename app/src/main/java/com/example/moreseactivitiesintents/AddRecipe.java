@@ -107,7 +107,7 @@ public class AddRecipe extends AppCompatActivity {
                 ip= "10.0.2.2";
                 database="FoodRecipe";
                 uname="tyz";
-                pass="tyz123";
+                pass="Bigstomach1";
                 port="1433";
                 //50150
 //1433
@@ -120,7 +120,7 @@ public class AddRecipe extends AppCompatActivity {
                 {
                     Class.forName("net.sourceforge.jtds.jdbc.Driver");
                     // ConnectionURL="jdbc:sqlserver://"+ ip + ":"+ port+";"+ "databaseName="+ database+";user="+uname+";password="+pass+";";
-                    ConnectionURL= "jdbc:jtds:sqlserver://"+ip+":"+port+"/"+database;
+                    ConnectionURL= "jdbc:jtds:sqlserver://bigstomach12.database.windows.net:1433;DatabaseName=BigStomachServer;user=tyz@bigstomach12;password={Bigstomach1};encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;";
                     connection= DriverManager.getConnection(ConnectionURL, uname, pass);
 
                 }
