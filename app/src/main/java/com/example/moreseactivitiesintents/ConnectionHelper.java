@@ -16,10 +16,10 @@ public class ConnectionHelper {
     public Connection connectionclass()
     {
 
-        ip= "bigstomach12.database.windows.net";
-        database="BigStomachServer";
-        uname="tyz@bigstomach12";
-        pass="Bigstomach1";
+        ip= "foodrecipeserver.database.windows.net";
+        database="BigStomach";
+        uname="tyz@foodrecipeserver";
+        pass="Bigstomach12";
         port="1433";
         //50150
 //1433
@@ -33,7 +33,7 @@ public class ConnectionHelper {
              Class.forName("net.sourceforge.jtds.jdbc.Driver");
             // ConnectionURL="jdbc:sqlserver://"+ ip + ":"+ port+";"+ "databaseName="+ database+";user="+uname+";password="+pass+";";
             // ConnectionURL="jdbc:sqlserver://"+ ip + ":"+ port+";"+ "databaseName="+ database+";user="+uname+";password="+pass+";encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;";
-             ConnectionURL= "jdbc:jtds:sqlserver://bigstomach12.database.windows.net:1433/BigStomachServer;ssl=required;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;";
+             ConnectionURL= "jdbc:jtds:sqlserver://foodrecipeserver.database.windows.net:1433/BigStomach;ssl=required;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;";
              connection= DriverManager.getConnection(ConnectionURL, uname, pass);
 
          }
